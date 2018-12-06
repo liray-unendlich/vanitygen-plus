@@ -265,6 +265,7 @@ main(int argc, char **argv)
 					"NYAN : Nyancoin : K\n"
 					"OK : OK Cash : P\n"
 					"OMC : Omnicoin : o\n"
+					"PHR : Phore : P\n"
 					"PIGGY : Piggycoin : p\n"
 					"PINK : Pinkcoin : 2\n"
 					"PIVX : PIVX : D\n"
@@ -466,6 +467,14 @@ main(int argc, char **argv)
 					"Generating CCC Address\n");
 					addrtype = 15;
 					privtype = 224;
+					break;
+			}
+			else
+			if (strcmp(optarg, "PHORE")== 0) {
+				fprintf(stderr,
+					"Generating PHORE Address\n");
+					addrtype = 55;
+					privtype = 212;
 					break;
 			}
 			else
